@@ -1,0 +1,25 @@
+{
+  "name": "fluent-udf-support",
+  "displayName": "fluent-udf-support",
+  "description": "support for the user-defined function in fluent",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "udf",
+      "aliases": ["udf", "udf"],
+      "extensions": ["udf."],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "udf",
+      "scopeName": "udf.source",
+      "path": "./syntaxes/udf.tmLanguage.json"
+    }]
+  }
+}
